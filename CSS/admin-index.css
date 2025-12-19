@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+#container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}

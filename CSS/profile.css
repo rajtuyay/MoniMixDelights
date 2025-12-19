@@ -1,0 +1,454 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #f3ecef;
+    font-family: 'Open Sans';
+}
+
+#bg {
+    width: 100%;
+    background-color: #f3ecef;
+    padding: 50px 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto 0;
+    width: 80%;
+    height: 800px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#column1 {
+    font-family: 'Open Sans';
+    width: 30%;
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #B91EB3;
+    background-color: #f3ecef;
+}
+
+#avatarholder {
+    background-color: #feeaf7;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 42%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 5px;
+}
+
+#avatarholder #avatar {
+    width: 160px;
+    height: 160px;
+    margin: 30px auto 10px auto;
+    border-radius: 70%;
+}
+
+#avatarholder h3 {
+    font-size: 22px;
+    margin: 5px 0 20px 0;
+}
+
+#avatarholder h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#avatarholder p {
+    margin: 0;
+    font-size: 13px;
+    color: #c050bd;
+}
+
+#avatarholder #editProfile {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+#avatarholder #editProfile img {
+    width: 20px;
+    height: 20px;
+}
+
+.info1 {
+    background-color: #f3ecef;
+    height: 13%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.info2 {
+    background-color: #f3ecef;
+    height: 26%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.space {
+    height: 9%;
+    width: 100%;
+}
+
+.info3 {
+    position: relative;
+    background-color: #f3ecef;
+    height: 7%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+}
+
+.info1 button,
+.info2 button,
+.info3 #logout {
+    font-family: 'Open Sans';
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #efdee8;
+    color: #b449b1;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.info1 button {
+    background: linear-gradient(to right, #f5eff2 0%, #fbf0f6 6%);
+    height: 50%;
+    text-align: left;
+}
+
+.info1 button img,
+.info2 button img,
+.info3 #logout img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.info2 button {
+    background: linear-gradient(to right, #f5eff2 0%, #fbf0f6 6%);
+    height: 25%;
+    text-align: left;
+}
+
+.info3 #logout {
+    background: linear-gradient(to right, #f5eff2 0%, #fbf0f6 6%);
+    height: 100%;
+    text-align: left;
+}
+
+#order img {
+    transform: scale(1.3);
+}
+
+#address img {
+    transform: scale(1.1);
+}
+
+.info3 #logout a {
+    font-family: 'Open Sans';
+    color: #b449b1;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.info3 #logout {
+    position: absolute;
+    padding: 0 6px;
+    bottom: 0;
+}
+
+#column2 {
+    position: relative;
+    background-color: white;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    color: #B91EB3;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.gradient-bg {
+    background: linear-gradient(to bottom, #FEE3F3 0%, white 20%);
+    height: 100%;
+    /* Set the height of the div */
+    width: 100%;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.img-holder {
+    display: flex;
+    background: linear-gradient(to bottom, #ffb9e3 5%, white 60%);
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+#column2 .gradient-bg #title .img-holder img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+#title #text-holder {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#title #h1 {
+    font-family: 'Open Sans';
+    padding-left: 10px;
+    font-weight: 600;
+    display: block;
+    font-size: 30px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+}
+
+#title #p {
+    padding-left: 10px;
+    font-family: 'Open Sans';
+    display: block;
+    width: 100%;
+    text-align: justify;
+    margin: 0;
+    color: #bb3db7;
+}
+
+#myform,
+#addForm,
+#editForm {
+    font-family: 'Open Sans';
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    justify-content: center;
+}
+
+.name {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.col-name {
+    width: 50%;
+}
+
+input,
+select,
+.buttons,
+#editButton,
+#cancelButton {
+    font-family: 'Open Sans';
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 7px;
+    border: 1px solid #FA8BCE;
+    color: #B91EB3;
+    background-color: #fff;
+}
+
+input:focus,
+select:focus {
+    border: 3px solid #FA8BCE;
+    outline: none;
+}
+
+.id:focus {
+    border: 1px solid #FA8BCE;
+}
+
+input::placeholder {
+    color: #c787c5;
+}
+
+.buttons {
+    border: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#editButton {
+    background-color: #FA8BCE;
+    color: white;
+    width: 30%;
+    font-size: 14px;
+}
+
+#cancelButton {
+    width: 30%;
+    display: none;
+    font-size: 14px;
+}
+
+#editButton:hover {
+    background-color: #f95cba;
+    cursor: pointer;
+}
+
+#cancelButton:hover {
+    outline: none;
+    cursor: pointer;
+}
+
+label {
+    width: 100%;
+    padding-right: 30px;
+    font-size: 14px;
+}
+
+.col-name label,
+#myForm label {
+    padding-left: 2px;
+}
+
+#column2 .gradient-bg h1 {
+    font-family: 'Open Sans';
+    font-size: 30px;
+    text-align: left;
+    color: #B91EB3;
+}
+
+#myForm {
+    text-align: left;
+}
+
+/* Modal container */
+#uploadImageModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark background */
+    z-index: 9999;
+    /* Ensure modal is on top */
+}
+
+/* Modal content */
+#uploadImageModal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the modal */
+    width: 700px;
+    /* Fixed width */
+    max-height: 80%;
+    /* Max height to prevent overflow */
+    overflow-y: auto;
+    /* Scroll if content is too tall */
+}
+
+/* Close button */
+#uploadImageModal .modal-content .close-btn {
+    font-weight: 700;
+    background-color: #ff5c5c;
+    font-size: 14px;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: -10px;
+    margin-right: -10px;
+}
+
+#uploadImageModal .modal-content .close-btn:hover {
+    background-color: #ff3b3b;
+}
+
+#imageForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Space between form fields */
+}
+
+#inputFile {
+    display: none;
+}
+
+/* Style the custom label acting as the file input button */
+label[for="inputFile"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c050bd; /* Custom button color */
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+label[for="inputFile"]:hover {
+    background-color: #a03da0; /* Hover effect */
+}
+
+/* Submit Button */
+#submitFile {
+    padding: 10px 20px;
+    background-color: #FA8BCE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitFile:hover {
+    background-color: #f95cba;
+}

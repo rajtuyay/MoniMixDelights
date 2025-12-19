@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'apricot';
+  src: url('../Font/apricot.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../Font/open-sans.ttf') format('truetype');
+}

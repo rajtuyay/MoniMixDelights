@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'apricot';
+    src: url('../Font/apricot.otf') format('opentype');
+    /* Adjust the path if needed */
+}
+
+*{
+    font-family: 'Open Sans';
+    color: #B91EB3;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #feeaf7;
+}
+
+#description {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #feeaf7;
+}
+
+#description #p {
+    color: #b91eb4ce;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    letter-spacing: 1px;
+}
+
+#description #h1 {
+    color: #B91EB3;
+    margin: 20px 0 0 0;
+    font-size: 55px;
+    font-family: 'apricot';
+    font-weight: 600;
+}
+
+#categories {
+    width: 100%;
+    background-color: #feeaf7;
+}
+
+#categories #img-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    width: auto;
+    gap: 20px;
+    margin: auto;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: #feeaf7;
+    padding: 50px 0 50px 0;
+}
+
+#categories #img-container #img img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.4s ease-in-out;
+}
+
+#categories #img-container #img #img-holder {
+    position: relative;
+    width: 100%;
+    max-height: 42vh;
+    height: 42vh;
+    max-height: 42vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+#categories #img-container #img #img-holder:hover img{
+    transform: scale(1.03);
+}
+
+#categories #img-container #img {
+    /* Set the container to relative to position children absolutely */
+    text-align: left;
+    width: 23.1%;
+    height: auto;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#categories #img-container #img #category-names {
+    position: absolute;
+    /* Position the category-names relative to the parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width of the image */
+    height: 100%;
+    /* Full height of the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    opacity: 0;
+    /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    transition: opacity 0.3s ease;
+    /* Smooth fade effect */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#categories #img-container #img #name {
+    display: block;
+    font-size: 17px;
+    font-family: 'Open Sans';
+    color: black;
+    width: auto;
+    margin: 0;
+}
+
+#categories #img-container #img #price {
+    display: block;
+    font-size: 22px;
+    font-family: 'Open Sans';
+    color: #B91EB3;
+    width: auto;
+    margin: 0;
+    font-weight: 700;
+}
+
+#img-tag {
+    margin-right: 0;
+}
+
+#categories #img-container #img:hover #category-names {
+    opacity: 1;
+    /* Show when hovering over the image */
+}
+
+#details {
+    padding: 10px 10px;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    /* Adjust the font size for the star */
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background-color: #d3d3d3;
+    /* Default gray for empty stars */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star.filled {
+    background-color: gold;
+    /* Full star color */
+}
+
+#img-direct{
+    margin-right: 0;
+}
+
+@media (max-width: 900px) {
+    #categories #img-container #img #img-holder{
+        height: 30vh;
+        width: 100%;
+    }
+
+    #categories #img-container #img p{
+        font-size: 1rem;
+    }
+
+    #categories #img-container #img #img-direct{
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    #categories #img-container #img p{
+        font-size: 0.9rem;
+    }
+
+    #description #h1{
+        font-size: 2.9rem;
+    }
+
+    #description #p{
+        font-size: 1rem;
+    }
+
+    #categories #img-container #img{
+        width: 36vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #categories #img-container #img p{
+        font-size: 0.8rem;
+    }
+
+    #description #h1{
+        font-size: 2.7rem;
+    }
+
+    #description #p{
+        font-size: 0.9rem;
+    }
+
+    #categories #img-container #img{
+        width: 38vh;
+    }
+}
+
+@media (max-width: 380px) {
+    #description #h1{
+        font-size: 2.5rem;
+    }
+
+    #description #p{
+        font-size: 0.8rem;
+    }
+
+    #categories #img-container #img{
+        width: 36vh;
+    }
+}

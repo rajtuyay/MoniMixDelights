@@ -1,0 +1,13 @@
+# Enable mod_rewrite for URL rewriting
+RewriteEngine On
+
+# If the requested file or directory does not exist, redirect to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
+
+# Block direct access to .htaccess file
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>

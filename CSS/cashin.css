@@ -1,0 +1,120 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        #cashInForm {
+            background-color: red;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #cashInForm form {
+            position: relative;
+            width: 100vh;
+            height: 80vh;
+            background: #ffe6f0;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #cashInForm h2 {
+            color: #ff66a3;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style input number */
+        #cashInForm input[type="number"] {
+            border: 2px solid #ff66a3;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+            height: 60px;
+
+        }
+
+        .btnamounts {
+            height: 35vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btnamounts button {
+            background-color: #ff99c2;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btnamounts button:hover {
+            background-color: #ff66a3;
+        }
+
+        #cashInForm button[type="submit"] {
+            background-color: #ff66a3;
+            color: white;
+            border: none;
+            font-size: 2rem;
+            padding: 10px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        #cashInForm button[type="submit"]:hover {
+            opacity: 1;
+        }
+
+        #closeForm {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            color: #ff66a3;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+
+        #closeForm:hover {
+            color: #ff66a3;
+        }
+
+        #balance button {
+            padding: 10px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        #balance button:hover {
+            background-color: #ff99c2;
+        }
+
+        #balance img {
+            vertical-align: middle;
+            margin-left: 10px;
+        }

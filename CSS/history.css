@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'apricot';
+    src: url('../Font/apricot.otf') format('opentype');
+    /* Adjust the path if needed */
+}
+
+* {
+    font-family: 'Open Sans';
+    color: #B91EB3;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Open Sans';
+}
+
+#description {
+    width: 100%;
+    background-color: #feeaf7;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#description #p {
+    color: #b91eb4ce;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    letter-spacing: 1px;
+}
+
+#description #h1 {
+    color: #B91EB3;
+    margin: 20px 0 0 0;
+    font-size: 55px;
+    font-family: 'apricot';
+    font-weight: 600;
+}
+
+#container {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start;
+    /* Ensures the cards align to the left */
+    padding-left: 80px;
+}
+
+.card {
+    display: flex;
+    width: calc(50% - 7.5px);
+    /* Ensures 2 cards per row, accounting for the gap */
+    width: 45%;
+    height: 40vh;
+    position: relative;
+    font-family: 'Open Sans';
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.imgCard {
+    max-height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.photo {
+    padding: 10px;
+}
+
+.photo .imgCard #overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.photo .imgCard:hover img {
+    transform: scale(1.05);
+}
+
+.photo .imgCard:hover #overlay {
+    opacity: 1;
+}
+
+.photo .imgCard #overlay p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100000;
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-image span {
+    position: absolute;
+    top: -0.5rem;
+    right: 10px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+    padding: 0;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img {
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    border-radius: 10px;
+    max-width: 90vh;
+    width: 100%;
+    max-height: 90vh;
+    height: 100%;
+}
+
+.details h2 {
+    font-family: Apricot;
+    color: #B91EB3;
+    font-size: 2.5rem;
+    margin: 10px 0 0 0;
+}
+
+.details p {
+    color: #d978b2;
+    font-family: 'Open Sans';
+    font-size: 1.2rem;
+}
+
+#bottom_text {
+    position: absolute;
+    display: block;
+    color: #B91EB3;
+    bottom: 10px;
+    right: 10px;
+}
+
+#bottom_text p {
+    display: block;
+    z-index: 10;
+    font-size: 1.3rem;
+    padding-right: 10px;
+    text-align: right;
+    margin: 0;
+}
+
+#bottom_text #total {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+#deliveredBtn {
+    font-family: 'Open Sans';
+    background-color: #FA8BCE;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+}
